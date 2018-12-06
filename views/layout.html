@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<link rel="shortcut icon" href="img/favicon.png" />
+		<title>Orange County Rape Crisis Center - <%= page.charAt(0).toUpperCase() + page.slice(1) %></title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/mdb.min.css" rel="stylesheet">
+		<link href="css/alert.css" rel="stylesheet">
+		<link href="css/custom.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			
+
+
+
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <a class="navbar-brand" href="/">
+						<strong>
+						<img src="img/logo.jpg" id="logo" align="ocrcc logo" />
+						</strong>
+					</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item <%if (page=='home') {%>  active  <%}%>">
+							<a class="nav-link" href="/">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/">Resources</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/">Donate</a>
+						</li>
+						<li class="nav-item <%if (page=='contact') {%>  active  <%}%>">
+							<a class="nav-link" href="/contact">Contact</a>
+						</li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+		<div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-1z" data-slide-to="1"></li>
+				<li data-target="#carousel-example-1z" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item active">
+					<div class="view" style="background-image: url('img/carousel/img1.jpg'); background-repeat: no-repeat; background-size: cover;">
+						<div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+							<div class="text-center white-text mx-5 wow fadeIn">
+								<h1 class="mb-4">
+								<strong>Activism</strong>
+								</h1>
+								<p class="mb-4 d-none d-md-block">
+									<strong>
+									We participate in and organize protests and events to improve political support for anti-sexual assault policy, anti-domestica violence policy, and Women's health issues.
+									</strong>
+								</p>
+								<a target="_blank" href="/" class="btn btn-outline-white btn-lg">
+									Learn more about our activism
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="view" style="background-image: url('img/carousel/img3.jpg'); background-repeat: no-repeat; background-size: cover;">
+						<div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+							<div class="text-center white-text mx-5 wow fadeIn">
+								<h1 class="mb-4">
+								<strong>Support</strong>
+								</h1>
+								<p class="mb-4 d-none d-md-block">
+									<strong>
+									We provide customized and compassionate support services for anyone who requests it. We have specific expertise in domestic violence, sexual assault, and PTSD support.
+									</strong>
+								</p>
+								<a target="_blank" href="/" class="btn btn-outline-white btn-lg">
+									Learn more about our support services
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="view" style="background-image: url('img/carousel/img2.jpg'); background-repeat: no-repeat; background-size: cover;">
+						<div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+							<div class="text-center white-text mx-5 wow fadeIn">
+								<h1 class="mb-4">
+								<strong>Empowerment</strong>
+								</h1>
+								<p class="mb-4 d-none d-md-block">
+									<strong>
+									Our key mission is to empower and support survivors of crime and abuse. We have created a community of caring, compassion, and support.
+									</strong>
+								</p>
+								<a target="_blank" href="/" class="btn btn-outline-white btn-lg">
+									Learn more about our mission
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<%- body %>
+		</div>
+	</main>
+	<footer class="page-footer text-center font-small mt-4 wow fadeIn">
+		<hr class="my-4">
+		<div class="row">
+			<div class="col-sm">
+				<p>
+					<strong>Office Address</strong><br/>
+					1506 East Franklin St.<br/>
+					Chapel Hill, NC 27514<br/>
+				</p>
+			</div>
+			<div class="col-sm">
+				<p>
+					<strong>Mailing Address</strong><br/>
+					P. O. Box 4722</br>
+					Chapel Hill, NC 27515</br>
+				</p>
+			</div>
+			<div class="col-sm">
+				<p>
+					<strong>Phone</strong><br/>
+					919-968-4647<br/>
+				</p>
+			</div>
+			<div class="col-sm">
+				<div class="pb-4 h2">
+					<a href="https://www.facebook.com/OCRCC/" target="_blank">
+						<i class="fa fa-facebook mr-3"></i>
+					</a>
+					<a href="https://twitter.com/OCRCC" target="_blank">
+						<i class="fa fa-twitter mr-3"></i>
+					</a>
+					<a href="http://ocrcc.org/tag/youtube/" target="_blank">
+						<i class="fa fa-youtube mr-3"></i>
+					</a>
+					<a href="http://ocrcc.org/blog" target="_blank">
+						<i class="fa fa-google-plus mr-3"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright py-3">
+			© 2018 Copyright: OCRCC
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/mdb.min.js"></script>
+	<script type="text/javascript" src="js/alert.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
